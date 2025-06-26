@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,7 +26,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: '#6b21a8',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
@@ -61,12 +62,40 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				purple: {
+					50: '#f3e8ff',
+					100: '#e9d5ff',
+					200: '#d8b4fe',
+					300: '#c084fc',
+					400: '#a855f7',
+					500: '#9333ea',
+					600: '#7c3aed',
+					700: '#6d28d9',
+					800: '#6b21a8',
+					900: '#581c87',
+				},
+				pink: {
+					50: '#fce7f3',
+					100: '#fbb6ce',
+					200: '#f687b3',
+					300: '#ed64a6',
+					400: '#d53f8c',
+					500: '#b83280',
+					600: '#97266d',
+					700: '#702459',
+					800: '#521b41',
+					900: '#2d1b29',
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'serif': ['Playfair Display', 'Georgia', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {

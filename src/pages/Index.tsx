@@ -2,6 +2,27 @@
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-4 py-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center">
+              <h1 className="text-2xl font-bold text-purple-800">Webzolve</h1>
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <a href="#about" className="text-gray-600 hover:text-purple-800 transition-colors duration-300">About</a>
+              <a href="#our-way" className="text-gray-600 hover:text-purple-800 transition-colors duration-300">Our Way</a>
+              <a href="#ventures" className="text-gray-600 hover:text-purple-800 transition-colors duration-300">Ventures</a>
+              <a href="#founder-note" className="text-gray-600 hover:text-purple-800 transition-colors duration-300">Founder Note</a>
+              <a href="#collaborate" className="text-gray-600 hover:text-purple-800 transition-colors duration-300">Contact</a>
+            </nav>
+            <button className="bg-purple-800 hover:bg-purple-900 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-300">
+              Message Founder
+            </button>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
